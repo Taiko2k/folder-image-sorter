@@ -56,7 +56,7 @@ class Ix:
             ex.line.setText(self.previous)
         else:
             for item in self.history:
-                if item[:len(text)] == text:
+                if item[:len(text)] == text and len(item) > len(text):
                     ex.line.setText(item)
                     break
 
@@ -146,7 +146,7 @@ class Example(QMainWindow):
             ix.current_scaled = None
             ix.current_raw = None
 
-        self.line.setFocus()
+        # self.line.setFocus()
         self.update()
 
     def next(self):
@@ -156,7 +156,7 @@ class Example(QMainWindow):
             ix.current_scaled = None
             ix.current_raw = None
 
-        self.line.setFocus()
+        # self.line.setFocus()
         self.update()
 
     def delete(self):
@@ -277,10 +277,9 @@ class Example(QMainWindow):
         if ix.current is not None:
             qp.drawText(80, 350, "On " + str(ix.current + 1) + " of " + str(len(ix.current_paths)))
         else:
-            qp.drawText(500, 180, "1. Drag and drop files to add to queue.")
-            qp.drawText(500, 220, "2. Select a working directory where folders will be made.")
+            qp.drawText(500, 220, "1. Select a working directory where folders will be made.")
+            qp.drawText(500, 180, "2. Drag and drop files to add to queue.")
             qp.drawText(500, 260, "3. For each image enter a folder name.")
-
 
         qp.end()
 
