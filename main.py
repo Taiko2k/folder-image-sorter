@@ -277,8 +277,8 @@ class Example(QMainWindow):
         if ix.current is not None:
             qp.drawText(80, 350, "On " + str(ix.current + 1) + " of " + str(len(ix.current_paths)))
         else:
-            qp.drawText(500, 220, "1. Select a working directory where folders will be made.")
-            qp.drawText(500, 180, "2. Drag and drop files to add to queue.")
+            qp.drawText(500, 180, "1. Select a working directory where folders will be made.")
+            qp.drawText(500, 220, "2. Drag and drop files to add to queue.")
             qp.drawText(500, 260, "3. For each image enter a folder name.")
 
         qp.end()
