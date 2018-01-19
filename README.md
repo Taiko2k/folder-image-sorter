@@ -1,6 +1,7 @@
 # Folder Image Sorter
 A basic GUI for sorting images into given folder names with an image preview.
 
+![screenshot][https://raw.githubusercontent.com/Taiko2k/folder-image-sorter/master/Screenshot.png]
 ___
 
 Imagine you have a folder of images, say animal pictures, and you want to sort each type into its own folder. For example; 'dogs' and 'cats', normally you might use your file manager, but if there's many types and many files, this may become a little tiresome.
