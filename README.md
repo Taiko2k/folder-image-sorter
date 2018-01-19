@@ -13,7 +13,7 @@ Tips:
  - Use short folder names for fast sorting, like 'c' for cat. You can always rename the folders later.
  - Press TAB to reuse the last label. TAB will also auto-complete to closest previous match.
  - Entering a blank label will skip that image
- - If you make a mistake, just press the 'Previous' button and re-enter a new label
+ - If you make a mistake, just press the 'Previous' button and re-enter a folder name
  - Checking the checkbox will allow you to delete images just by hitting the Delete key, otherwise use Ctrl+Delete.
 
  ___
